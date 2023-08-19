@@ -7,14 +7,7 @@
       <p>This is a project template that uses Tailwind for styling</p>
       <p>and Axios for handling API calls.</p>
     </div>
-    <button @click="increment">Count is: {{ count }}</button>
   </section>
 </template>
 
-<script setup lang="ts">
-import { storeToRefs } from 'pinia'
-import { useCounterStore } from '@stores/counter'
-
-const { increment } = useCounterStore()
-const { count } = storeToRefs(useCounterStore())
-</script>
+<script setup lang="ts"></script>
