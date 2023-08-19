@@ -1,3 +1,5 @@
+import type { ComputedRef } from 'vue'
+
 export interface IUser {
   gender: string
   name: IName
@@ -74,4 +76,17 @@ export interface IInfo {
   results: number
   page: number
   version: string
+}
+
+export interface IOptions {
+  [key: string]: ComputedRef<string>
+}
+
+export enum EUserDetails {
+  Name = 'name',
+  Email = 'email',
+  Dob = 'dob',
+  Location = 'location',
+  Phone = 'phone',
+  Password = 'password'
 }
