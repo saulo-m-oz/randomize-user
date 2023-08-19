@@ -1,11 +1,13 @@
 <template>
-  <div class="border border-neutral-700 rounded-full h-[146px] w-[146px] mx-auto p-2">
+  <div
+    class="border border-neutral-700 rounded-full h-[146px] w-[146px] mx-auto p-2"
+    @click="randomize"
+  >
     <img
       v-if="details.thumbnail"
       class="rounded-full object-fill cursor-pointer"
       :src="details.thumbnail"
       alt="profile-picture"
-      @click="randomize"
     />
   </div>
 </template>
