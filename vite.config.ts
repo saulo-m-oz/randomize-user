@@ -11,6 +11,7 @@ const alias = Object.entries(aliases).reduce((carry, [alias, path]) => {
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
+  base: '/randomize-user/',
   resolve: {
     alias
   }
