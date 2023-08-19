@@ -48,7 +48,7 @@ export const useRandomizerStore = defineStore('randomizer', () => {
       phone: getPhone,
       password: getPassword,
       email: getEmail,
-      dob: getDob
+      birthday: getDob
     }
 
     details.info = options[lKey].value
