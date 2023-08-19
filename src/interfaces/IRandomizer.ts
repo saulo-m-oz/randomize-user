@@ -85,7 +85,7 @@ export interface IOptions {
 export enum EUserDetails {
   Name = 'name',
   Email = 'email',
-  Dob = 'dob',
+  Birthday = 'dob',
   Location = 'location',
   Phone = 'phone',
   Password = 'password'
